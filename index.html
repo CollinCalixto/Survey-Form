@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID 19 Symptom Checker</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<body>
+    <h1 id="title">COVID 19 Survey Form</h1>
+    <p id="description">Symptom Checker</p>
+    <form id="survey-form" action="" method="post">
+        <!-- <div class="wrapper"> -->
+            <label id="name-label" for="name">*Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required
+            />
+            <label id="email-label" for="email">*Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter a valid email address"
+                required />
+            <label id="number-label" for="number">*Age:</label>
+            <input type="number" name="number" id="number" placeholder="Age" min="1" max="125"
+                required />
+            <label id="email-label" for="address">*Home Address:</label>
+            <input type="address" name="address" id="address" placeholder="Enter your home address"
+                required />
+
+  
+
+            <p>What is your employment status?</p>
+            <!-- Option from a Dropdown -->
+            <select name="some_name" id="dropdown">
+					<option value="" selected>Select an option</option>
+					<option value="student">Student</option>
+					<option value="Employed">Employed</option>
+					<option value="Self-Employed">Self-employed</option>
+					<option value="Unemployed">Unemployed</option>
+					<option value="Not">Not looking for a job</option>
+				</select>
+            <p>Gender</p>
+            <div class="radio-container">
+                <!-- Group of radio buttons -->
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="male" />
+                    <label class="label-radio" for="definitely"> Male</label>
+                </div>
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="Female" />
+                    <label class="label-radio" for="maybe"> Female</label>
+                </div>
+               </div>
+            <p>Have you been in close contact with a confirmed case of COVID19?</p>
+            <div class="radio-container">
+                <!-- Group of radio buttons -->
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="Yes" />
+                    <label class="label-radio" for="definitely"> Yes</label>
+                </div>
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="No" />
+                    <label class="label-radio" for="maybe"> No</label>
+                </div>
+               
+            </div>
+             <p>In the last 14 days have you travelled to COVID-19 affected provinces/cities?</p>
+            <div class="radio-container">
+                <!-- Group of radio buttons -->
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="Yes" />
+                    <label class="label-radio" for="definitely"> Yes</label>
+                </div>
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="No" />
+                    <label class="label-radio" for="maybe"> No</label>
+                </div>
+               
+            </div>
+
+
+
+            <!-- Series of checkboxes -->
+            <p>What symptoms do you currently experience?</p>
+            <div class="checkbox-container">
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="answer1" />
+                    <label for="answer1">Cough</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="answer1" />
+                    <label for="answer1">Fever</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="answer1" />
+                    <label for="answer1">Sorethroat</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="answer1" />
+                    <label for="answer1">Loss of taste and Smell</label>
+                </div>
+
+                 <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="answer1" />
+                    <label for="answer1">Fatigue</label>
+                </div>
+
+                 <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="answer1" />
+                    <label for="answer1">Difficulty Breathing</label>
+                </div>
+            </div>
+            <!-- Textarea for additional comments -->
+            <p>Additional Comments</p>
+            <textarea name="comments" id="comments"></textarea>
+        <!-- </div> -->
+        <button class="shadow" type="submit" id="submit">Submit</button>
+    </form>
+
+  
+</body>
+</html>
